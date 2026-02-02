@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="nl">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO basics -->
+    <title>Projecten - Quido Veekens | UX Cases & Front-end Voorbeelden</title>
+    <meta name="description" content="Case studies: Andes GIS redesign, TimeCircle app, Heijmans Zonnecollectie en Veekens Method. Hoe ik denk, ontwerp en bouw met focus op coherentie.">
+    
+    <!-- Open Graph (LinkedIn, Facebook, etc.) -->
+    <meta property="og:title" content="Projecten - Quido Veekens | UX Cases & Front-end Voorbeelden">
+    <meta property="og:description" content="Case studies: Andes GIS redesign, TimeCircle app, Heijmans Zonnecollectie en Veekens Method. Hoe ik denk, ontwerp en bouw met focus op coherentie.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jouwdomein.nl/[huidige-pagina-pad].html">
+    <meta property="og:image" content="https://jouwdomein.nl/img/og-share.jpg">
+    
+    <!-- Twitter / X Cards (optioneel maar fijn) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[Zelfde als title]">
+    <meta name="twitter:description" content="[Zelfde als description]">
+    <meta name="twitter:image" content="https://jouwdomein.nl/assets/twitter-share.jpg">
+    
+    <!-- Canonical (voorkomt duplicate issues als je dubbele URL's hebt) -->
+    <link rel="canonical" href="https://jouwdomein.nl/projects.html">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">QV</a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projecten</a></li>
+                    <li><a href="about.html">Over mij</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section style="padding: 4rem 0 2rem; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Mijn projecten</h1>
+            <p style="font-size: 1.25rem; color: var(--gray); max-width: 700px; margin: 0 auto;">Van UX research tot werkende code—case studies van projecten waar ik UX design en front-end development combineerde.</p>
+        </div>
+    </section>
+
+    <!-- Case Study 1: Andes -->
+    <section class="case-study" id="andes">
+        <div class="container">
+            <div class="case-hero">
+                <h1>Andes - GIS Software UI Redesign</h1>
+                <div class="case-meta">
+                    <div class="case-meta-item"><strong>Rol:</strong> UX Designer & Front-end Developer</div>
+                    <div class="case-meta-item"><strong>Periode:</strong> 2022-2023</div>
+                    <div class="case-meta-item"><strong>Team:</strong> Scrum team (6 FTE)</div>
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h2>Probleem</h2>
+                <p>Gebruikers van de GIS software klaagden over <strong>cognitive overload</strong>—te veel visuele elementen tegelijk op het scherm, waardoor overzicht verloren ging. Dit leidde tot frustratie, fouten en langzamere workflows.</p>
+                
+                <p>Klanten rapporteerden specifiek:</p>
+                <ul>
+                    <li>"Ik zie door de bomen het bos niet meer"</li>
+                    <li>"Te veel knoppen, ik weet niet waar ik moet klikken"</li>
+                    <li>"De kaart verdwijnt achter alle UI elementen"</li>
+                </ul>
+            </div>
+
+            <div class="case-section">
+                <h2>Aanpak</h2>
+                
+                <h3>1. User Research</h3>
+                <p>Ik voerde interviews met 5 gebruikers (GIS-specialisten) om het probleem in kaart te brengen:</p>
+                <ul>
+                    <li>Welke features gebruiken ze het meest?</li>
+                    <li>Waar raken ze verloren in de UI?</li>
+                    <li>Wat zou hun workflow versnellen?</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <strong>Belangrijkste inzicht:</strong> Gebruikers hadden slechts 20% van de beschikbare features nodig voor dagelijks werk, maar alle 100% was altijd zichtbaar.
+                </div>
+
+                <h3>2. Cognitieve Analyse</h3>
+                <p>Ik deed online research naar cognitieve belasting en UI design principes:</p>
+                <ul>
+                    <li>Miller's Law: mensen kunnen 7±2 items tegelijk onthouden</li>
+                    <li>Progressive disclosure: toon alleen wat relevant is</li>
+                    <li>Fitts's Law: grotere, dichterbij = sneller te bereiken</li>
+                </ul>
+
+                <h3>3. Iteratief Design</h3>
+                <p>Ik ontwierp <strong>7 deeloplossingen</strong> die onafhankelijk én gezamenlijk het probleem aanpakten:</p>
+                <ul>
+                    <li>Hergroeperen van tools in contextafhankelijke panels</li>
+                    <li>Collapsible sidebars (toon/verberg op basis van taak)</li>
+                    <li>Vergroten van kaart-viewport (primaire focus)</li>
+                    <li>Iconografie versimpelen (minder visuele ruis)</li>
+                    <li>Keyboard shortcuts voor power users</li>
+                </ul>
+
+                <h3>4. POC Development</h3>
+                <p>Ik bouwde een werkende <strong>Proof of Concept</strong> in Angular 14 + Leaflet.js om het nieuwe design te testen met echte data.</p>
+            </div>
+
+            <div class="case-section">
+                <h2>Resultaat</h2>
+                <p>Het redesign werd goedgekeurd door management en klanten. Gebruikersfeedback na POC demo:</p>
+                <ul>
+                    <li>"Veel overzichtelijker, ik vind nu wat ik zoek"</li>
+                    <li>"De kaart staat eindelijk centraal"</li>
+                    <li>"Dit voelt als een modern GIS-systeem"</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <strong>Impact:</strong> UI vereenvoudiging leidde tot geschatte 30% snellere workflows (op basis van user testing met 3 taken).
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h2>Tech Stack</h2>
+                <div class="tech-stack">
+                    <span class="tech-tag">Angular 14</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Leaflet.js</span>
+                    <span class="tech-tag">Adobe XD</span>
+                    <span class="tech-tag">Scrum</span>
+                    <span class="tech-tag">User Research</span>
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h2>Wat ik hiervan leerde</h2>
+                <p>Dit project leerde me dat gebruikers zelden het probleem goed kunnen articuleren ("te druk"), maar wel de symptomen kennen ("ik raak dingen kwijt"). Mijn taak als UX designer is niet alleen luisteren naar wat ze zeggen, maar <strong>observeren wat ze doen</strong>—en daar patronen in herkennen.</p>
+                
+                <p>Cognitive load theorie (Miller's Law: 7±2 items) gaf me het framework om "te druk" te vertalen naar meetbare principes. Dit tilde design van gevoelsmatig naar onderbouwd—en maakte het makkelijker om stakeholders te overtuigen.</p>
+    
+                <p>Belangrijkste inzicht: <strong>Progressive disclosure</strong> is niet alleen een design pattern, maar een fundamenteel principe van hoe het brein informatie verwerkt. Toon alleen wat relevant is, wanneer het relevant is.</p>
+            </div>
+
+            <div class="case-section">
+                <p><em>Note: Screenshots zijn niet beschikbaar i.v.m. NDA. Bovenstaande case study beschrijft het proces en resultaat.</em></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Case Study 2: Vrest Medical -->
+    <section class="case-study" id="vrest">
+        <div class="container">
+            <div class="case-hero" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <h1>Vrest Medical - Portfolio App TimeCircle</h1>
+                <div class="case-meta">
+                    <div class="case-meta-item"><strong>Rol:</strong> UX Designer & Front-end Developer</div>
+                    <div class="case-meta-item"><strong>Periode:</strong> 2021-2022</div>
+                    <div class="case-meta-item"><strong>Team:</strong> Scrum team (5 FTE)</div>
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h2>Uitdaging</h2>
+                <p>Dokters in opleiding moesten hun tijd en prestaties bijhouden in een portfolio app. Bestaande methodes waren:</p>
+                <ul>
+                    <li>Saai (spreadsheets, lijsten)</li>
+                    <li>Onduidelijk (geen overzicht van voortgang)</li>
+                    <li>Demotiverend (alleen data, geen inzicht)</li>
+                </ul>
+                
+                <p>De vraag: <strong>hoe maken we tijdregistratie inzichtelijk, motiverend en visueel aantrekkelijk?</strong></p>
+            </div>
+
+            <div class="case-section">
+                <h2>Mijn Aanpak</h2>
+                
+                <h3>1. User Research</h3>
+                <p>Ik interviewde 8 dokters in opleiding:</p>
+                <ul>
+                    <li>Hoe houden ze nu tijd bij?</li>
+                    <li>Wat willen ze inzicht in?</li>
+                    <li>Wat motiveert hen?</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <strong>Belangrijkste inzicht:</strong> Dokters wilden zien "hoever ben ik?" en "wat moet ik nog doen?"—niet alleen "hoeveel uur heb ik gemaakt."
+                </div>
+
+                <h3>2. Conceptualisatie: TimeCircle</h3>
+                <p>Ik bedacht het concept <strong>"Tijd als cirkel"</strong>:</p>
+                <ul>
+                    <li>Een jaar = een cirkel (360 graden)</li>
+                    <li>Gevulde segmenten = behaalde prestaties</li>
+                    <li>Open segmenten = nog te behalen</li>
+                    <li>Kleurcodering voor verschillende categorieën</li>
+                </ul>
+                
+                <p>Dit gaf in één oogopslag overzicht: "Ik ben 60% door mijn jaar, en ik heb nog deze skills nodig."</p>
+
+                <h3>3. Prototyping & Testing</h3>
+                <p>Ik maakte wireframes en hi-fi prototypes in Adobe XD. User testing met 5 dokters leverde feedback op:</p>
+                <ul>
+                    <li>"Eindelijk zie ik mijn voortgang visueel"</li>
+                    <li>"Kan ik ook per specialisme een cirkel zien?" (feature toegevoegd)</li>
+                    <li>"Kleuren helpen enorm bij categoriseren"</li>
+                </ul>
+
+                <h3>4. Development</h3>
+                <p>Ik implementeerde TimeCircle in Angular 13 met Chart.js. De uitdaging: Chart.js ondersteunt geen segmented circles out-of-the-box, dus ik bouwde custom visualisatie logic.</p>
+            </div>
+
+            <div class="case-section">
+                <h2>Resultaat</h2>
+                <p>TimeCircle werd geïmplementeerd in de live app. Gebruikersfeedback:</p>
+                <ul>
+                    <li>"Ik check mijn voortgang nu dagelijks—vroeger deed ik dat maandelijks"</li>
+                    <li>"Het motiveert me om die laatste skills af te vinken"</li>
+                    <li>"Mooi ontwerp, professioneel"</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <strong>Impact:</strong> Engagement met portfolio app steeg met ~40% (gemeten via app analytics).
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h2>Tech Stack</h2>
+                <div class="tech-stack">
+                    <span class="tech-tag">Angular 13</span>
+                    <span class="tech-tag">Ionic</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Chart.js</span>
+                    <span class="tech-tag">Adobe XD</span>
+                    <span class="tech-tag">SCSS</span>
+                    <span class="tech-tag">User Testing</span>
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h2>Wat ik hiervan leerde</h2>
+                <p>Dit project bevestigde iets wat ik al vermoedde: <strong>data visualisatie is pas waardevol als het inzicht geeft, niet alleen informatie toont</strong>. Een spreadsheet met uren werkt niet, omdat gebruikers het zelf moeten interpreteren. TimeCircle werkt omdat de interpretatie al is gedaan—je ziet in één oogopslag waar je staat.</p>
+    
+                <p>Het bouwen van custom Chart.js visualisaties leerde me ook dat libraries grenzen hebben, en dat de beste oplossingen soms custom code vereisen. Creativiteit in development = weten wanneer je library niet genoeg is.</p>
+    
+                <p>Belangrijkste inzicht: Motivatie komt van <strong>vooruitgang zichtbaar maken</strong>. Mensen willen niet alleen weten "hoeveel heb ik gedaan" maar "hoever ben ik"—dat tweede geeft richting.</p>
+            </div>
+
+            <div class="case-section">
+                <p><em>Note: Screenshots zijn niet beschikbaar i.v.m. NDA. Concept is beschreven voor illustratie van UX-proces.</em></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Case Study 3: Heijmans -->
+    <section class="case-study" id="heijmans">
+        <div class="container">
+            <div class="case-hero" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                <h1>Heijmans Infra - Zonnecollectie App UX Design</h1>
+                <div class="case-meta">
+                    <div class="case-meta-item"><strong>Rol:</strong> UX Designer</div>
+                    <div class="case-meta-item"><strong>Periode:</strong> 2020-2021</div>
+                    <div class="case-meta-item"><strong>Team:</strong> Scrum team (7 FTE)</div>
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h2>Context</h2>
+                <p>Heijmans wilde een nieuwe app bouwen voor hun zonnepaneel projecten. Als UX Designer leidde ik het volledige ontwerpproces <strong>vanaf nul</strong>—van requirements tot presentatie aan management.</p>
+            </div>
+
+            <div class="case-section">
+                <h2>Mijn Proces</h2>
+                
+                <h3>1. Stakeholder Interviews</h3>
+                <p>Ik voerde 5 interviews met stakeholders (sales, project managers, technisch team):</p>
+                <ul>
+                    <li>Wat is het doel van de app?</li>
+                    <li>Wie zijn de gebruikers?</li>
+                    <li>Wat zijn must-have vs nice-to-have features?</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <strong>Scope bepaald:</strong> App voor sales team om klanten te laten zien hoeveel energie zonnepanelen opwekken, met real-time data visualisatie.
+                </div>
+
+                <h3>2. User Journey Mapping</h3>
+                <p>Ik bracht de customer journey in kaart:</p>
+                <ul>
+                    <li><strong>Lead fase:</strong> Potentiële klant wordt geïnteresseerd</li>
+                    <li><strong>Offerte fase:</strong> Sales toont energieberekeningen</li>
+                    <li><strong>Installatie fase:</strong> Klant volgt voortgang project</li>
+                    <li><strong>Post-installatie:</strong> Klant ziet daadwerkelijke opbrengst</li>
+                </ul>
+
+                <h3>3. Wireframing</h3>
+                <p>Ik ontwierp 15+ schermen in Adobe XD:</p>
+                <ul>
+                    <li>Dashboard (overzicht energie opbrengst)</li>
+                    <li>Project detail pagina's</li>
+                    <li>Calculators (hoeveel besparing?)</li>
+                    <li>Notificaties & alerts</li>
+                </ul>
+
+                <h3>4. Hi-Fi Prototypes & Animaties</h3>
+                <p>Ik maakte interactieve prototypes met focus op <strong>data visualisatie</strong>:</p>
+                <ul>
+                    <li>Animated graphs (energie opgewekt per uur/dag/maand)</li>
+                    <li>Licht-visualisatie concept: informatie gepresenteerd als "lichtstralen" (symbolisch voor zonne-energie)</li>
+                    <li>Kleurgebruik: warm (geel/oranje) voor energie, cool (blauw) voor besparing</li>
+                </ul>
+
+                <h3>5. Presentatie aan Management</h3>
+                <p>Ik presenteerde het volledige design aan stakeholders + C-level. De presentatie bevatte:</p>
+                <ul>
+                    <li>User journey uitleg</li>
+                    <li>Walkthrough van alle schermen</li>
+                    <li>Interactieve prototype demo</li>
+                    <li>Rationale achter design keuzes</li>
+                </ul>
+            </div>
+
+            <div class="case-section">
+                <h2>Resultaat</h2>
+                <p>Het design werd <strong>goedgekeurd</strong> als basis voor ontwikkeling. Feedback van stakeholders:</p>
+                <ul>
+                    <li>"Precies wat we nodig hadden—visueel, professioneel, to-the-point"</li>
+                    <li>"De licht-visualisatie is innovatief en past perfect bij ons merk"</li>
+                    <li>"Je hebt alle use cases goed begrepen"</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <strong>Impact:</strong> Design vormde de basis voor development roadmap. Project kreeg groen licht voor implementatie.
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h2>Skills Gebruikt</h2>
+                <div class="tech-stack">
+                    <span class="tech-tag">Adobe XD</span>
+                    <span class="tech-tag">Wireframing</span>
+                    <span class="tech-tag">Prototyping</span>
+                    <span class="tech-tag">Stakeholder Interviews</span>
+                    <span class="tech-tag">User Journey Mapping</span>
+                    <span class="tech-tag">Presenting</span>
+                    <span class="tech-tag">Data Visualisation</span>
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h2>Wat ik hiervan leerde</h2>
+                <p>Dit was mijn eerste volledig autonoom UX-project—vanaf stakeholder interviews tot presentatie aan C-level. Het leerde me dat <strong>UX design = 50% luisteren, 50% vertalen</strong>.</p>
+    
+                <p>Stakeholders wisten wat ze wilden ("app voor zonnepanelen"), maar niet hoe. Mijn rol was hun business goals (verkoop verhogen, klanten informeren) vertalen naar user needs (hoeveel bespaar ik? Is dit de moeite waard?), en dát vertalen naar concrete schermen en flows.</p>
+    
+                <p>De licht-visualisatie (informatie als lichtstralen) was een conceptueel risico—het had "te abstract" kunnen zijn. Maar het werkte omdat het <strong>symbolisch paste bij het product</strong> (zonne-energie = licht). Soms is een goede metafoor sterker dan een letterlijke representatie.</p>
+    
+                <p>Belangrijkste inzicht: Design is pas compleet als je het kunt <strong>verkopen</strong>. De mooiste wireframes zijn waardeloos als stakeholders ze niet begrijpen of goedkeuren. Presenteren = deel van design.</p>
+            </div>
+
+            <div class="case-section">
+                <p><em>Note: Screenshots zijn niet beschikbaar i.v.m. NDA. Case study beschrijft het UX-proces en resultaat.</em></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Case Study 4: Veekens Method -->
+<section class="case-study" id="veekens-method">
+    <div class="container">
+        <div class="case-hero" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <h1>Veekens Method – Consciousness Assessment Framework</h1>
+            <div class="case-meta">
+                <div class="case-meta-item"><strong>Rol:</strong> Ontwikkelaar & UX Designer</div>
+                <div class="case-meta-item"><strong>Periode:</strong> 2025–2026</div>
+                <div class="case-meta-item"><strong>Type:</strong> Persoonlijk onderzoeksproject</div>
+            </div>
+        </div>
+
+        <div class="case-section">
+            <h2>Het probleem dat ik zag</h2>
+            <p>Bestaande modellen van bewustzijn waren vaak te vaag, te statisch of te binair (aan/uit). Ze misten een manier om coherentie echt te meten – terwijl coherentie bepaalt of iets "leeft" of "werkt". Ik zag dat cognitie niet ín het brein plaatsvindt, maar in de ruimte ertussen: een relationeel proces van vectorvelden waar coherentie ontstaat of breekt.</p>
+            <div class="highlight-box">
+                <strong>Mijn kerninzicht:</strong> Bewustzijn is geen bezit, maar een dynamisch spectrum van integratie. Dat spectrum kun je kwantificeren.
+            </div>
+        </div>
+
+        <div class="case-section">
+            <h2>Mijn aanpak: de 10 subdomeinen</h2>
+            <p>Ik bouwde een framework met 10 subdomeinen als dynamische vectorvelden (geen statische hokjes). Ze meten aspecten van bewustzijn en interactie:</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                <span class="tech-tag"><strong>AR</strong> – Analytisch Redeneren</span>
+                <span class="tech-tag"><strong>PR</strong> – Probleemoplossing</span>
+                <span class="tech-tag"><strong>SPS</strong> – Verwerkingssnelheid</span>
+                <span class="tech-tag"><strong>EP</strong> – Emotionele Perceptie</span>
+                <span class="tech-tag"><strong>RD</strong> – Reflectieve Diepte</span>
+                <span class="tech-tag"><strong>PV</strong> – Praktische Uitvoering</span>
+                <span class="tech-tag"><strong>SR</strong> – Zelfregulatie</span>
+                <span class="tech-tag"><strong>SC</strong> – Systemisch/Conceptueel</span>
+                <span class="tech-tag"><strong>CI</strong> – Conceptuele Intuïtie</span>
+                <span class="tech-tag"><strong>MCA</strong> – Metacognitief Bewustzijn</span>
+            </div>
+            <p>Deze subdomeinen aggregeren in vier hoofddomeinen (SAER: Analytisch, Systemisch, Emotioneel, Praktisch) – richtingen waarin bewustzijn zich oriënteert.</p>
+        </div>
+
+        <div class="case-section">
+            <h2>Kernprincipes van de engine</h2>
+            <ul>
+                <li><strong>Love Layer</strong>: Emotionele en relationele energie als primaire driver van coherentie – de binnenste draad die het systeem voedt.</li>
+                <li><strong>Modifier-matrix</strong>: Asymmetrische interacties (Bottleneck, Support, Enhancement, etc.) met dynamische gewichten en edge cards.</li>
+                <li><strong>Temporale dynamiek</strong>: MCA-T integreert tijd; regimes veranderen door TimeFlow, TimeStress en Shadow Captain Risk.</li>
+                <li><strong>Ethical Gatekeeping</strong>: Drempel 7.0 voorkomt misbruik van macht – coherentie vóór kracht.</li>
+            </ul>
+        </div>
+
+        <div class="case-section">
+            <h2>Regimes & meetbaarheid</h2>
+            <p>Op basis van totale score worden systemen ingedeeld in regimes: Emergent → Functional → Integrated → Synergistic → Transcendent. Dit geeft een spectrum van coherentie, niet binair aan/uit.</p>
+            <p>Het model is deterministisch, canoniek gesloten en operationeel meetbaar – klaar voor toepassing in AI-evaluatie, persoonlijke ontwikkeling en organisatorische coherentie.</p>
+        </div>
+
+        <div class="case-section">
+            <h2>Wat ik ervan heb geleerd</h2>
+            <p>Dit was persoonlijk onderzoek, maar het leerde me interdisciplinair denken: neurowetenschap vertalen naar een meetbaar framework, net zoals ik UX-problemen aanpak. Kerninzicht: complexe concepten worden toegankelijk door ze op te breken in meetbare componenten. Bewustzijn is geen mysterie, maar een spectrum van coherentie dat je kunt kwantificeren – en liefde is de brandstof.</p>
+            <p>De Veekens Method ontstond uit mijn eigen ervaring: een behoefte aan coherentie in een wereld vol ruis. Het is een tool om te begrijpen hoe bewustzijn zich oriënteert, stroomt en transformeert.</p>
+        </div>
+
+        <div class="case-section" style="text-align: center; margin: 2rem 0;">
+            <a href="https://veekens-method.vercel.app/" target="_blank" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">
+                Probeer de Veekens Method (gratis beta) →
+            </a>
+            <p style="margin-top: 1rem; font-size: 1rem; color: var(--gray);">
+                Duurt 8–12 minuten • Privacy-first • Mail me voor toegang of vragen
+            </p>
+        </div>
+
+        <div class="case-section">
+            <p><em>Note: Dit persoonlijke onderzoeksproject toont mijn vermogen complexe theoretische concepten te vertalen naar praktische frameworks – een skill die direct toepasbaar is in UX design en productontwikkeling.</em></p>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Geïnteresseerd in samenwerken?</h2>
+            <p>Neem contact op om te bespreken hoe ik kan bijdragen aan jouw project.</p>
+            <a href="contact.html" class="btn btn-white">Neem contact op</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2026 Quido Veekens</p>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:quidoveekens@gmail.com">quidoveekens@gmail.com</a>
+                    <span class="separator">•</span>
+                    <a href="https://linkedin.com/in/quidoveekens/">LinkedIn</a>
+                    <span class="separator">•</span>
+                    <a href="tel:0657600031">06 5760 0031</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

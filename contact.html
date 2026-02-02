@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO basics -->
+    <title>Contact - Quido Veekens | UX & Front-end Opdrachten Eindhoven</title>
+    <meta name="description" content="Beschikbaar voor UX design, front-end of samenwerking in regio Eindhoven. Mail quidoveekens@hotmail.com of bel 06 5760 0031.">
+    
+    <!-- Open Graph (LinkedIn, Facebook, etc.) -->
+    <meta property="og:title" content="Contact - Quido Veekens | UX & Front-end Opdrachten Eindhoven">
+    <meta property="og:description" content="Beschikbaar voor UX design, front-end of samenwerking in regio Eindhoven. Mail quidoveekens@hotmail.com of bel 06 5760 0031.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jouwdomein.nl/[huidige-pagina-pad].html">
+    <meta property="og:image" content="https://jouwdomein.nl/img/og-share.jpg"> <!-- 1 image voor hele site oké, of per pagina -->
+    
+    <!-- Twitter / X Cards (optioneel maar fijn) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[Zelfde als title]">
+    <meta name="twitter:description" content="[Zelfde als description]">
+    <meta name="twitter:image" content="https://jouwdomein.nl/assets/twitter-share.jpg">
+    
+    <!-- Canonical (voorkomt duplicate issues als je dubbele URL's hebt) -->
+    <link rel="canonical" href="https://jouwdomein.nl/contact.html">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">QV</a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projecten</a></li>
+                    <li><a href="about.html">Over mij</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Neem contact op</h1>
+            <p style="font-size: 1.25rem; color: var(--gray); max-width: 700px; margin: 0 auto;">Geïnteresseerd in samenwerken? Stuur me een bericht of bel direct.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <h2>Laten we praten</h2>
+                    <p>Ik ben op zoek naar nieuwe uitdagingen als UX Designer of Front-end Developer in de regio Eindhoven. Of je nu een vast dienstverband, freelance project of kennismakingsgesprek in gedachten hebt—ik hoor graag van je.</p>
+                    
+                    <ul class="contact-details">
+                        <li>
+                            <strong>Email</strong>
+                            <a href="mailto:quidoveekens@gmail.com">quidoveekens@gmail.com</a>
+                        </li>
+                        <li>
+                            <strong>Telefoon</strong>
+                            <a href="tel:0657600031">06 5760 0031</a>
+                        </li>
+                        <li>
+                            <strong>Locatie</strong>
+                            <span style="color: var(--dark); font-size: 1.125rem;">Veldhoven, Noord-Brabant</span>
+                        </li>
+                        <li>
+                            <strong>Beschikbaarheid</strong>
+                            <span style="color: var(--dark); font-size: 1.125rem;">0.8 - 1.0 FTE</span>
+                        </li>
+                    </ul>
+
+                    <div style="margin-top: 3rem;">
+                        <h3 style="margin-bottom: 1rem;">Download CV</h3>
+                        <p style="color: var(--gray); margin-bottom: 1rem;">Wil je mijn volledige werkervaring en vaardigheden bekijken?</p>
+                        <a href="/pdf/Cv Quido Veekens.pdf" class="btn btn-secondary" download="Cv Quido Veekens.pdf">Download CV (PDF)</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Stuur een bericht</h2>
+                    
+                    <form action="https://formspree.io/f/xnjzojav" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Naam *</label>
+                            <input type="text" id="name" name="name" required placeholder="Jouw naam">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="jouw@email.nl">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefoon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="06 1234 5678">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Onderwerp *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Waar gaat het over?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Bericht *</label>
+                            <textarea id="message" name="message" required placeholder="Vertel me meer over je project of vraag..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Verstuur bericht</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2026 Quido Veekens</p>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:quidoveekens@gmail.com">quidoveekens@gmail.com</a>
+                    <span class="separator">•</span>
+                    <a href="https://linkedin.com/in/quidoveekens/">LinkedIn</a>
+                    <span class="separator">•</span>
+                    <a href="tel:0657600031">06 5760 0031</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
